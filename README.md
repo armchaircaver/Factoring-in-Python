@@ -12,9 +12,13 @@ A module to factor numbers in Python. The module uses several techniques to fact
 
 The main functions of the module are:
 - factorise(n, maxBrentTime=1.0) return a list of the prime factors of n. maxBrentTime specifies the number of seconds that the Pollard Rho algorithm should run for, before resorting to ECM or YAFU
+
 - millerRabin(n) returns True if the Miller Rabin algorithm determines that n is probably prime, False if it identifies n as a composite. The algorithm is deterministic up to 2^64
--brent(N,maxBrentTime=1.0) implements the Pollard Rho algorithm with Brent's vaiation, and returns a prime factor of N, or raises and exception if it times out without finding a factor
+
+- brent(N,maxBrentTime=1.0) implements the Pollard Rho algorithm with Brent's vaiation, and returns a prime factor of N, or raises and exception if it times out without finding a factor
+
 - brent_gmp(n,maxBrentTime=1.0) GMP implemtation of the Pollard Rho algorithm. Requires module gmpy2, available at https://pypi.org/project/gmpy2/
+
 - carmichael(n) returns the Carmichael number of n
 
 - totient(n) returns the Euler totient number of n
