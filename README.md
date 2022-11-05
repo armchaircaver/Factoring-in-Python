@@ -4,7 +4,7 @@ A module to factor numbers in Python. The module uses several techniques to fact
 
    - Lookup tables for numbers below 10^6
    
-   - Trial division of primes below 300
+   - Trial division of primes below 1200
    
    - Miller-Rabin primality test (deterministic up to the published limit)
    
