@@ -6,7 +6,7 @@ A module to factor numbers in Python. The module uses several techniques to fact
    - Trial division of primes below 300
    - Miller-Rabin primality test (deterministic up to the published limit)
    - Brent's variant of the Pollard Rho algorithm, by default running for up to 1 second
-   - An interface to a DLL of a fast C++ implementation, for 64 bit numbers 
+   - An interface to a DLL of a fast C++ implementation, for 64 bit numbers. The C++ implementation can be found at https://github.com/armchaircaver/Factors
    - Python interface to YAFU, running YAFU as a subprocess, to factorise very large numbers (YAFU can be obtained from https://sourceforge.net/projects/yafu/)
    - Using Martin G Kelly's implementation of the Elliptic Curve Method (ECM) if the Brent algorithm fails to find a factor within its time limit. In practice, ECM is only useful if GMP arithmetic is available. pyecm can be found at https://github.com/martingkelly/pyecm
 
